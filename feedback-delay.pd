@@ -1,0 +1,35 @@
+#N canvas 247 552 726 362 10;
+#X floatatom 207 242 5 0 0 0 - - -;
+#X obj 71 127 delay~ 22500;
+#X obj 30 75 * 441;
+#X obj 179 76 bp~ 7000 3;
+#X obj 153 104 *~ 0.6;
+#X obj 183 49 receive~ delayfeedback\$1;
+#X obj 56 165 send~ delayfeedback\$1;
+#X obj 207 108 vsl 15 128 0.02 2 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 148 216 *~;
+#X obj 111 256 outlet~;
+#X obj 128 13 inlet~;
+#X obj 178 14 inlet;
+#X obj 222 15 inlet;
+#X obj 230 108 vsl 15 128 0.01 1 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 272 13 inlet;
+#X obj 373 42 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X connect 0 0 2 0;
+#X connect 1 0 3 0;
+#X connect 1 0 8 0;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 5 0 1 0;
+#X connect 7 0 8 1;
+#X connect 8 0 9 0;
+#X connect 10 0 1 0;
+#X connect 11 0 0 0;
+#X connect 12 0 7 0;
+#X connect 13 0 4 1;
+#X connect 14 0 13 0;
+#X coords 0 -1 1 1 50 160 1 200 100;

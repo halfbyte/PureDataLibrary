@@ -1,0 +1,24 @@
+#N canvas 0 22 1140 584 10;
+#X obj 216 248 abs~;
+#X obj 213 196 osc~ 0.5;
+#X obj 220 325 vsl 15 128 0.01 1 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 11777 1;
+#X obj 265 303 snapshot~;
+#X msg 279 281 bang;
+#X msg 294 206 bang;
+#X obj 179 111 random 100;
+#X obj 225 495 outlet;
+#X obj 299 164 loadbang;
+#X obj 282 250 metro 10;
+#X obj 228 152 / 100;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 7 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 5 0 9 0;
+#X connect 6 0 10 0;
+#X connect 8 0 5 0;
+#X connect 9 0 4 0;
+#X connect 9 0 6 0;
+#X connect 10 0 1 0;
